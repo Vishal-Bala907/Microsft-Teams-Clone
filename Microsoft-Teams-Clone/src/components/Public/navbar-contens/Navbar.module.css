@@ -1,0 +1,47 @@
+.navBar{
+  display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.navbarLeftUl {
+      display: flex;
+      list-style: none;
+      column-gap: 3%;
+      height: 3em;
+      background-color: white;
+          justify-content: end;
+      align-items: center;
+}
+.microsoftLogo{
+      aspect-ratio: auto;
+    height: 1.4rem;
+}
+.navbarRightUl{
+       display: flex;
+      list-style: none;
+      column-gap: 1em;
+      justify-content: center;
+      align-items: center;
+          text-wrap: nowrap;
+}
+.dropDwon{
+          display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarLeftUl li:hover  {
+      border-bottom: 2.5px solid black;
+}
+.navbarRightUl li:hover  {
+      border-bottom: 2.5px solid black;
+}
+.navBarSignInButton{
+          border: 1px solid navy;
+    padding: 2%;
+    width: 32%;
+    border-radius: 8px;
+}
+.makeBold{
+      font-weight: 600;
+}

@@ -1,0 +1,24 @@
+.size{
+  font-size: x-large;
+  margin: 1em 0;
+  padding: .3em 0;
+}
+.size p{
+  font-size: x-small;
+}
+.size:hover{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-left: 7px solid rgb(120 116 116);
+  color: black;
+}
+.LeaveButton{
+    height: 2.5em;
+    width:10em;
+    background-color: red;
+    background-color: #db0000;
+    color: white;
+    border-style: none;
+    border-radius: .3em;
+    cursor: pointer;
+}

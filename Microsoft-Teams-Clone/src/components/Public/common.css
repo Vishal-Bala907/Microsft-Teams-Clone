@@ -1,0 +1,62 @@
+@media only screen and (min-width: 949px) {
+.left p h2{
+      font-size: xx-large;
+    font-weight: 500;
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+}
+.t-left{
+  width: 50%;
+}
+.t-right{
+  width: 50%;
+}
+
+/** Section 2 */
+.parent{
+    display: flex;
+    padding: 0 3%;
+    column-gap: 3%;
+    height: 25em;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.leftDiv{
+  width: 50%;
+      background-color: white;
+}
+.rightDiv{
+  width: 50%;
+      background-color: white;
+}
+.parent img{
+  width: 100%;
+}
+
+.sec2BottomHeading{
+    margin-left: .5em;
+    padding: 1em .5em;
+}
+.sec2Bottompara{
+      margin-left: .5em;
+    padding: 0 .5em 1em .5em;
+}
+.sec2BottomAnchors{
+      margin-left: .5em;
+    padding: 0 .5em 1em .5em;
+   
+}
+.sec2BottomAnchors a{
+  color: rgb(26, 110, 255);
+}
+.hello{
+      text-align: left;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+}

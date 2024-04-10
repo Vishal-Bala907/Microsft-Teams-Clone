@@ -1,0 +1,61 @@
+.newsSection{
+      display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.firstDiv{
+  width: 40%;
+  height: 37em;
+  margin-right: 10%;
+}
+.firstDiv img{
+  width: 100%;
+}
+.firstDiv b a {
+  text-decoration: none;
+  color: rgb(26, 110, 255);
+}
+.buttonCover{
+      display: flex;
+    justify-content: flex-start;
+    column-gap: 2em;
+    margin-bottom: 1em;
+}
+
+.newsSection{
+      display: flex;
+    margin-left: 3%;
+}
+.secondDiv{
+  width: 40%;
+  display: flex;
+  height: 15em;
+  flex-direction: column;
+  row-gap: 2em;
+  margin-left: 10%;
+}
+.secondDiv img{
+  width: 100%;
+}
+.secondDiv b a {
+  text-decoration: none;
+  color: rgb(26, 110, 255);
+}
+.secondDivLeftContent{
+      display: flex;
+}
+
+.thirdDiv{
+  width: 100%;
+  display: flex;
+}
+.thirdDiv img{
+  width: 100%;
+}
+.thirdDiv b a {
+  text-decoration: none;
+  color: rgb(26, 110, 255);
+}
+/* .secondDivLeftContent{
+      display: flex;
+} */

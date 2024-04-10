@@ -1,0 +1,26 @@
+    /* --fc-today-bg-color  white; */
+    :root {
+  --primary-color: #007bff; /* Define a primary color variable */
+  --secondary-color: #6c757d; /* Define a secondary color variable */
+   --fc-today-bg-color:  white;
+}
+
+
+.fc{
+  height: 100%;
+  background-color: #cdcaca;
+    color: black;
+}
+.fc-col-header-cell-cushion{
+  color: black;
+}
+.fc-daygrid-day-number{
+  color: navy;
+}
+.fc .fc-daygrid-day.fc-day-today   {
+      background-color: rgb(255, 255, 174);
+}
+
+.fc-theme-standard td{
+  background-color: rgba(255, 255, 255, 0.41);
+}

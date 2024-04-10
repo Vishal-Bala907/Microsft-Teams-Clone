@@ -1,0 +1,46 @@
+.Hero{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.Hero h1{
+    width: 80%;
+    font-weight: 600;
+    margin-top: 2em;
+    text-align: center;
+}
+.para{
+      width: 80%;
+      text-align: center;
+}
+.signup{
+      color: white;
+    background-color: #5d5bd4;
+    padding: .6em 1em;
+    font-weight: 500;
+}
+.download{
+      color: #4947b1;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.buttons{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
+.buttonsContainer{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainImage{
+  background-image: url('./images/mainHero.jpg');
+  height: 22rem;
+    width: 100%;
+    background-size: cover;
+}

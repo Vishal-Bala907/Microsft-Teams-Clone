@@ -1,0 +1,30 @@
+.main{
+        width: 100%;
+    height: 92%;
+    background-color: #ebebeb;
+    overflow: auto;
+}
+.chatSend{
+        height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+        background-color: #dedede;
+}
+.textInput{
+    width: 60%;
+    height: 60%;
+    font-size: x-large;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+}
+.sendButton{
+    padding: .7em 2em;
+    background-color: #444791;
+    color: white;
+    border: none;
+}

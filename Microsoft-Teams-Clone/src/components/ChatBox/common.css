@@ -1,0 +1,37 @@
+.size{
+  font-size: xx-large;
+  margin: 1em 0;
+}
+.size p{
+  font-size: x-small;
+}
+.size:hover{
+  background-color: rgba(174, 174, 174, 0.325);
+  cursor: pointer;
+  border-left: 3px solid #444791 ;
+  color: #444791;
+}
+.LeaveButton{
+    height: 2.5em;
+    width:10em;
+    background-color: red;
+    background-color: #db0000;
+    color: white;
+    border-style: none;
+    border-radius: .3em;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    height: 92vh;
+    width: 100%;
+        background-color: #cdcdcd;
+    column-gap: .51%;
+
+}
+.hover{
+  background-color: rgba(174, 174, 174, 0.325);
+  cursor: pointer;
+  border-left: 3px solid #444791 ;
+  color: #444791;
+}

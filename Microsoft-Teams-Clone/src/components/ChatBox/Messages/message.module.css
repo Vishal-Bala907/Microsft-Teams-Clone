@@ -1,0 +1,42 @@
+.wrapper{
+      /* background-color: aliceblue; */
+    /* padding: .5em; */
+    height: 3em;
+    margin: 2em;
+}
+.chatReciver{
+      background-color: antiquewhite;
+    padding: .4em;
+    max-width: 70%;
+    width: fit-content;
+
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 1em;
+    padding: .5em 1em;
+
+        border-radius: 0 10px 10px 10px;
+}
+.chatSender{
+    background-color: rgb(33, 143, 222);
+    padding: .4em;
+    max-width: 70%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 1em;
+    padding: .5em 1em;
+    border-radius: 0 10px 10px 10px;
+    flex-direction: row-reverse;
+}
+
+.senderWrapper{
+    height: 3em;
+    margin: 2em;
+    display: flex;
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,139 @@
+@media only screen and (min-width: 949px) {
+.bLeftSection{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bMainSection{
+    background-color: #5d5bd4;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10em;
+    padding: 4em 0;
+}
+.home{
+    display: flex;
+    column-gap: 30%;
+    text-wrap: nowrap;
+}
+.Logo{
+font-size: 3em;
+    opacity: 0.7;
+}
+h2{
+      font-size: x-large;
+    font-weight: 400;
+}
+.leftHeading{
+    font-size: x-large;
+}
+.buttons{
+      display: flex;
+    column-gap: 5%;
+}
+.firstAnchor{
+    background-color: white;
+    padding: 1%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: small;
+    text-decoration: none;
+    color: blue;
+}
+.secondAnchor{
+    color: white;
+    padding: 1%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: small;
+    text-decoration: none;
+    border: 1px solid white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.specialAnchor{
+  color: rgb(62, 100, 183);
+  text-decoration: underline;
+}
+.para{
+    width: 80%;
+    margin-left: 10%;
+    font-size: small;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+}
+
+
+@media only screen and (max-width: 949px) {
+.bLeftSection{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.bMainSection{
+    background-color: #5d5bd4;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10em;
+    padding: 4em 0;
+     flex-direction: column;
+}
+.home{
+    display: flex;
+    column-gap: 5%;
+    text-wrap: nowrap;
+}
+.Logo{
+font-size: 3em;
+    opacity: 0.7;
+}
+h2{
+      font-size: x-large;
+    font-weight: 400;
+}
+.leftHeading{
+    font-size: x-large;
+}
+.buttons{
+display: none;
+}
+.firstAnchor{
+    background-color: white;
+    padding: 1%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: small;
+    text-decoration: none;
+    color: blue;
+}
+.secondAnchor{
+    color: white;
+    padding: 1%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: small;
+    text-decoration: none;
+    border: 1px solid white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.specialAnchor{
+  color: rgb(62, 100, 183);
+  text-decoration: underline;
+}
+.para{
+    width: 80%;
+    margin-left: 10%;
+    font-size: small;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+}

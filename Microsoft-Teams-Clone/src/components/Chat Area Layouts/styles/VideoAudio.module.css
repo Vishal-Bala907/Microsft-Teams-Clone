@@ -1,0 +1,14 @@
+.videoFrames{
+    height: 30%;
+    width: 30%;
+}
+.videos{
+      background-color: rgba(19, 19, 19, 0.586);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+        flex-wrap: wrap;
+}
