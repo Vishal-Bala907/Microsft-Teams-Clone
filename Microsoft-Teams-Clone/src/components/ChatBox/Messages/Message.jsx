@@ -9,11 +9,11 @@ export default function Message({ message }) {
 
   // console.log("Message ", user);
   const ref = useRef();
-  console.log("MESSAGES ", message);
+  // console.log("MESSAGES ", message);
   useEffect(() => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
-  console.log(message);
+  // console.log(message);
 
   return (
     <div

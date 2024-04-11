@@ -12,6 +12,12 @@
   border-left: 7px solid rgb(120 116 116);
   color: black;
 }
+.selected{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-left: 7px solid rgb(120 116 116);
+  color: black;
+}
 .LeaveButton{
     height: 2.5em;
     width:10em;

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./common.css";
-// import styles from "./VideoChatNavbar.module.css";
 import { FaRegBell } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 import { BsChatText, BsEmojiSmile } from "react-icons/bs";

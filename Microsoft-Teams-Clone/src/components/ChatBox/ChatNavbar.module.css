@@ -12,7 +12,7 @@
     column-gap: 2em;
 }
 .left input{
-    width: 33em;
+    width: 38vw;
     height: 2.5em;
     border-radius: .5em;
     padding: .2em 1em;
@@ -34,37 +34,39 @@
 }
 /** Sidebar */
 .top{
-        display: flex;
-    /* align-content: center; */
+    display: flex;
+    align-content: center;
     justify-content: space-evenly;
-        padding-top: .5em;
-            margin-bottom: 3%;  
-                height: 4%;
-
+    height: 3vw;
+    width: 28vw;
+    background-color: white;
+    align-items: center;
 }
 .options{
-        display: flex;
-    column-gap: 25%;
-        font-size: x-large;
-            padding-right: 5%;
+    font-weight: 500;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17vw;
+    gap: 20px;
 }
 .startCall{
     background-color: white;
-    padding: 8%;
     border-radius: 90%;
     display: flex;
-    /* color: white; */
     border: 1px solid #00000033;
     color: black;
     font-size: smaller;
     justify-content: center;
     align-items: center;
+    width: 2vw;
+    height: 2vw;
 }
 .contacts{
     overflow: hidden;
     width: 100%;
     height: 94%;
-    /* display: flex; */
     flex-direction: column;
     row-gap: 1em;
     justify-content: center;
@@ -72,24 +74,40 @@
     padding-top: 1em;
     padding-bottom: -1em;
     box-sizing: border-box;
-    /* overflow: scroll;
-    /* overflow: scroll; */
 }
 .user{
     width: 80%;
-    height: 6%;
+    height: 1vw;
     background-color: #d5d5d5;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     align-items: center;
     column-gap: 1em;
     border-radius: .31em;
-    margin: 0 10% 7%;
+    margin: 0 9% 2%;
     padding-left: 3%;
     padding: 1em 0 1em 1em;
 }
 .user:hover{
+    background-color: #868686;
+    cursor: pointer;
+    box-shadow:  2px 2px 10px #1a1a1a;
+    color: white;
+}
+.userSelected{
+
+    width: 80%;
+    height: 1vw;
+    /* background-color: #d5d5d5; */
+    display: flex;
+    align-items: center;
+    align-items: center;
+    column-gap: 1em;
+    border-radius: .31em;
+    margin: 0 9% 2%;
+    padding-left: 3%;
+    padding: 1em 0 1em 1em;
+
     background-color: #868686;
     cursor: pointer;
     box-shadow:  2px 2px 10px #1a1a1a;
@@ -103,8 +121,8 @@
 }
 .img{
     background-color: white;
-    width: 3rem;
-    height: 3rem;
+    height: 2em;
+    width: 2em;
     border-radius: 90%;
 }
 
@@ -113,7 +131,7 @@
     justify-content: center;
     align-items: center;
     padding: 1em 0;
-    height: 3em;
+    height: 3vw;
     background-color: #bdbdbd;
 
     
@@ -131,18 +149,13 @@
 }
 
 .searchEnter{
-        width: 100%;
-    height: 1em;
+    width: 100%;
+    /* height: 2vw; */
     border-radius: 5px;
     border-style: none;
     outline-style: none;
-    padding: 1em;
-        /* width: 80%;
-    height: 1.8em;
-    border-radius: 5px;
-    border-style: none;
-    outline-style: none;
-    padding: 1em; */
+    padding: .5em;
+    height: 2vw;
 }
 .searchEnter ::-webkit-search-cancel-button{
     display: none;
@@ -165,4 +178,12 @@
     height: fit-content;
     display: flex;
     align-items: center;    
+}
+.newChat{
+    width: 2vw;
+}
+.profile:hover{
+    border:3px solid rgb(13, 255, 0);
+    cursor: pointer;
+box-shadow: 2px 2px 30px white;
 }

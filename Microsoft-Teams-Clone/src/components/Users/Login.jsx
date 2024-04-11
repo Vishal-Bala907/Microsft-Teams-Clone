@@ -1,15 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./Signup.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import Spinner from "../Public/Spinner.jsx";
 import { auth } from "../../firebase";
-import {
-  setauthenticatedUser,
-  setProfile,
-  logout,
-} from "../../Redux Store/NavBar Slices/LoginAndImages.js";
 
 export default function Login() {
   const password = useRef("");
@@ -30,14 +25,9 @@ export default function Login() {
       try {
         setLoading(true);
         await signInWithEmailAndPassword(auth, Email, Password);
-        // dispatch(setauthenticatedUser(true));
-        // dispatch(setProfile());
         const unsub = onAuthStateChanged(auth, (user) => {
-          // alert("authen");
-          // state.profile = user;
           console.log(user);
           sessionStorage.setItem("profile", JSON.stringify(user));
-          // dispatch(setProfile());
         });
         setLoading(false);
         navigate("/calling");

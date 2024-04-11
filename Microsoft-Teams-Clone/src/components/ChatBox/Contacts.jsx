@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ChatNavbar.module.css";
 import Search from "./Search";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase";
 import { changeUser } from "../../Redux Store/NavBar Slices/ChatContext";
@@ -28,11 +28,15 @@ export default function Contacts() {
     const unsubscribe = getChats();
     return () => unsubscribe();
   }, [currentUser]);
+  const [userId, setUserId] = useState(null);
 
   const handleSelect = (user) => {
     setSelectedUser(user);
     dispatch(changeUser(user));
+    setUserId(user.uid);
   };
+  // const [selectedPerson , setSelectedPerson]
+  // userId === chat.userInfo.id ? styles.userSelected : styles.user;
 
   return (
     <div style={{ width: "28vw", height: "auto" }}>
@@ -43,8 +47,12 @@ export default function Contacts() {
           .map(([chatId, chat]) => (
             <div
               key={chatId}
-              className={`${styles.user}`}
-              onClick={() => handleSelect(chat.userInfo)}
+              className={
+                userId === chat.userInfo.uid ? styles.userSelected : styles.user
+              }
+              onClick={() => {
+                handleSelect(chat.userInfo);
+              }}
             >
               <div
                 className={styles.img}
@@ -55,7 +63,9 @@ export default function Contacts() {
                 }}
               ></div>
               <p>
-                <b>{chat.userInfo.displayName}</b>
+                <b style={{ fontSize: "1.3  vw" }}>
+                  {chat.userInfo.displayName}
+                </b>
                 <p>{chat.userInfo.lastMessage?.text}</p>
               </p>
             </div>

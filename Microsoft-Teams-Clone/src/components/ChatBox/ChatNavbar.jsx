@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ChatNavbar.module.css";
-import { useSelector } from "react-redux";
+import Profile from "../Users/Profile";
 
 export default function ChatNavbar() {
   const profile = JSON.parse(sessionStorage.getItem("profile"));
@@ -12,6 +12,8 @@ export default function ChatNavbar() {
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
+  const [visible, setVisible] = useState(false);
+
   return (
     <>
       <nav className={styles.navbar}>
@@ -21,12 +23,17 @@ export default function ChatNavbar() {
         <div className={styles.right}>
           <span style={{ fontWeight: 900 }}>...</span>
           <div
+            onClick={() => {
+              setVisible(!visible);
+            }}
             className={styles.profile}
             id="profilePic"
             style={profileStyle}
           ></div>
         </div>
       </nav>
+
+      <Profile visible={visible} />
     </>
   );
 }

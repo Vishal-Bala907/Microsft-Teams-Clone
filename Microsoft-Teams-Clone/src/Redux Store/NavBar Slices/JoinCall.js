@@ -7,7 +7,7 @@ export const JoinCall = createSlice({
     setJoined: (state) => {
       state.joined = !state.joined;
 
-      alert(state.joined);
+      // alert(state.joined);
     },
   },
 });

@@ -24,3 +24,7 @@
 .fc-theme-standard td{
   background-color: rgba(255, 255, 255, 0.41);
 }
+.fc-button-group{
+      gap: 15px;
+    margin-top: 1vw;
+}

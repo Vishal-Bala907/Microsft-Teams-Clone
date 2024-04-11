@@ -22,9 +22,18 @@ export default function VideoAudio({
 }) {
   const playVideo = useSelector((state) => state.chatcontext.playVideo);
 
+  console.log("Users", remoteUsers);
+
   return (
     <div className={styles.videos} style={{ backgroundColor: "#202020" }}>
-      <div className="vid" style={{ height: "30%", width: "30%" }}>
+      <div
+        className="vid"
+        style={
+          remoteUsers.length === 0
+            ? { height: "100%", width: "100%" }
+            : { height: "30%", width: "30%" }
+        }
+      >
         <LocalVideoTrack track={localCameraTrack} play={playVideo} />
       </div>
       {remoteUsers.map((remoteUser) => (

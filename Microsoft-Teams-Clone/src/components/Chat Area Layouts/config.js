@@ -2,10 +2,10 @@ import { EncryptionMode, UID, SDK_MODE } from "agora-rtc-sdk-ng";
 
 const config = {
   uid: null,
-  appId: "0f1288d9be9e452a91a26d0adc1106a5",
+  appId: "567ac472525a41d8ac75a77c6e308cfa",
   channelName: "main",
   rtcToken:
-    "007eJxTYNh/oETZ7pbsbfGdHE2BQtK72A+/89n4xz5a7FyPRrmP138FBoM0QyMLixTLpFTLVBNTo0RLw0QjsxSDxJRkQ0MDs0TTv7yiaQ2BjAw14hysjAwQCOKzMOQmZuYxMAAA16IdEg==",
+    "007eJxTYBDauSFF5Mm8bdaXWzoFHf/asudr/ldetayJY3ewcXLvrKkKDKZm5onJJuZGpkamiSaGKRaJyeamiebmyWapxgYWyWmJwfliaQ2BjAzTHY8xMzJAIIjPwpCbmJnHwAAA8rMeAQ==",
   serverUrl: "",
   proxyUrl: "http://localhost:8080/",
   tokenExpiryTime: 600,

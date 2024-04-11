@@ -9,7 +9,6 @@ li{
     row-gap: 8%;
     font-size: small;
     column-gap: 5%;
-    /* text-align: center; */
 }
 .products-span{
     display: flex;
@@ -61,5 +60,4 @@ li{
     row-gap: 8%;
     font-size: small;
     column-gap: 5%;
-    /* text-align: center; */
 }

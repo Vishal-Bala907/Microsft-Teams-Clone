@@ -13,12 +13,6 @@ export default function BlurBar() {
         }}
       >
         Chat, collaborate, and meet with anyone, anywhere
-        {/* <a
-          style={{ color: "white" }}
-          href="https://build.microsoft.com/en-US/home"
-        >
-          <strong>Rgister now </strong>
-        </a> */}
       </p>
     </>
   );

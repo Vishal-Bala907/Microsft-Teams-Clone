@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import Message from "./Message";
 import { useDispatch, useSelector } from "react-redux";
-// import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../../../firebase.js";
 import { doc, onSnapshot } from "firebase/firestore";
-// import { changeUser } from "../../Redux Store/NavBar Slices/ChatContext";
 const texts = [];
 export default function Messages() {
   const currentUser = JSON.parse(sessionStorage.getItem("messages"));

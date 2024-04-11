@@ -1,0 +1,39 @@
+.profileVisible{
+    position: absolute;
+    left: 69vw;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.profileInvisible{
+    position: absolute;
+    left: 69vw;
+    width: 20vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.img{
+    height: 5em;
+    width: 5em;
+    background-image: cover;
+    background-position: center;
+    border-radius: 90%;
+    object-fit: cover;
+    border: 2px solid black
+}
+.displayName{
+  font-weight: 500;
+}

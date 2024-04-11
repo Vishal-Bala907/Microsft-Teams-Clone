@@ -1,0 +1,7 @@
+.fc-view-harness ,.fc-view-harness-active{
+  height: 700px;
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+  height: 15vh;
+}

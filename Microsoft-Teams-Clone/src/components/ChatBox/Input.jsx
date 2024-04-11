@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import styles from "./ChatBox.module.css";
 
-import { useContext, useState } from "react";
-import { changeUser } from "../../Redux Store/NavBar Slices/ChatContext";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import {
   arrayUnion,

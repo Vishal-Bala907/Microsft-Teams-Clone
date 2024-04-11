@@ -124,50 +124,6 @@ export default function Signup() {
             } catch (error) {
               console.error("Error:", error);
             }
-            /*         uploadTask.on(
-              (error) => {
-                setError(true);
-                alert("error");
-                console.log(error);
-              },
-              () => {
-                getDownloadURL(uploadTask.snapshot.ref).then(
-                  async (downloadURL) => {
-                    await updateProfile(res.user, {
-                      displayName,
-                      photoURL: downloadURL,
-                    });
-                    try {
-                      await addDoc(collection(db, "users"), {
-                        uid: res.user.uid,
-                        displayName,
-                        Email,
-                        imageurl: downloadURL,
-                      });
-                      // await addDoc(collection(db, "userChats"));
-                      // console.log("Document written with ID: ", docRef.id);
-                    } catch (err) {}
-
-                    const fetchData = await fetch(
-                      "http://localhost:3000/signup",
-                      {
-                        method: "POST",
-                        body: formData,
-                      }
-                    );
-                    if (!fetchData.ok) {
-                      const dataRes = await fetchData.json();
-                      console.log(dataRes.data.message); // Accessing the message from the data object
-                      alert(dataRes.data.message);
-                      throw new Error("Network response was not ok");
-                    }
-                    const dataRes = await fetchData.json();
-                    console.log(dataRes);
-                  }
-                );
-              }
-            ); */
-
             console.log(res.json());
           } catch (err) {
             setError(true);

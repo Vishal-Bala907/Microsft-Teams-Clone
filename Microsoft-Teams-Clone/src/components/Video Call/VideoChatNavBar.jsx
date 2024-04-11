@@ -3,9 +3,9 @@ import styles from "./VideoChatNavbar.module.css";
 import { useSelector } from "react-redux";
 
 export default function NavBar() {
-  const profile = useSelector((state) => state.login.profile);
-  // alert(profile.image);
-  const IMG_URL = `/uploads/${profile.image}`;
+  const profile = JSON.parse(sessionStorage.getItem("profile"));
+  console.log("navbar", profile);
+  const IMG_URL = profile.photoURL;
   // Define the profileStyle object to set the background image
   const profileStyle = {
     backgroundImage: "url('" + `${IMG_URL}` + "')",
